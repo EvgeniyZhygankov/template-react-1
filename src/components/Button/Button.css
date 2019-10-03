@@ -1,0 +1,16 @@
+.btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  text-align: center;
+  border: 5px solid blue;
+  background: #8a8a83;
+  color: white;
+  border-radius: 10px;
+  margin: 100px;
+}
+
+.btn:hover {
+  background: #bebeb4;
+  cursor: default;
+}
+/*# sourceMappingURL=Button.css.map */

@@ -4,6 +4,7 @@ import '../src/styles/App.scss';
 import Header from './components/Header/Header'
 import Menu from './components/Menu/Menu'
 import About from './components/About/About'
+import Button from './components/Button/Button'
 
 class App extends React.Component {
     render() {
@@ -15,6 +16,7 @@ class App extends React.Component {
                 <Header />
                 <Menu />
                 <About />
+                <Button label="Сохранить" />
             </div>
         );
     }

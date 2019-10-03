@@ -1,0 +1,17 @@
+.btn {
+
+    text-decoration: none;
+    padding: 10px 20px;
+    text-align: center;
+    border: 5px solid blue;
+    background: rgb(138, 138, 131);
+    color: white;
+    border-radius: 10px;
+    margin: 100px;
+    &:hover {
+
+        background: rgb(190, 190, 180);
+        cursor: default;
+    }
+}
+
