@@ -21,11 +21,20 @@ module.exports = {
                 test : /\.(sa|sc|c)ss$/,
                 use: [
                     MiniCssExtractPlugin.loader,
-                    'css-loader',
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            modules: {
+                                mode: 'local',
+                                localIdentName: '[path][name]__[local]--[hash:base64:5]',
+                                hashPrefix: 'my-custom-hash',
+                            },
+                        }
+                    },
                     'sass-loader',
-                ],
-            }
-        ]
+                ]
+            },
+        ],
     },
     plugins: [
         new MiniCssExtractPlugin({
